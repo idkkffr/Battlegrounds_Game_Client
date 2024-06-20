@@ -1,42 +1,39 @@
 {
-  "name": "CardGame",
+  "name": "Battlegrounds_Game_Client",
   "tree": {
     "$className": "DataModel",
 
     "ReplicatedStorage": {
-      "$path" : "src/Client/ReplicatedStorage"
+      "$path": "src/Client/ReplicatedStorage"
     },
 
-    "ReplicatedFirst" : {
-      "$path" : "src/Client/ReplicatedFirst"
-    },
-
-    "StarterPlayer" : {
-      "$path" : "src/Client/StarterPlayer",
-      "StarterCharacterScripts" : {
-        "$path" : "src/Client/StarterCharacterScripts"
-      },
-      "StarterPlayerScripts" : {
-        "$path" : "src/Client/StarterPlayerScripts"
-      }
+    "ReplicatedFirst": {
+      "$path": "src/Client/ReplicatedFirst"
     },
 
     "ServerScriptService": {
-      "$path" : "src/Server/ServerScriptService"
+      "$className": "ServerScriptService",
+      "$path": "src/Server/ServerScriptService"
     },
 
-    "ServerStorage" : {
-      "$path" : "src/Server/ServerStorage"
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "$path": "src/Server/ServerStorage"
     },
 
-    "UnitTests": {
-      "$className" : "Folder",
-      "$path": "src/UnitTests"
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$path": "src/Client/StarterPlayer/StarterPlayerScripts"
+      },
+      "StarterCharacterScripts": {
+        "$path": "src/Client/StarterPlayer/StarterCharacterScripts"
+      }
     },
 
-    "Shared": {
-      "$className" : "Folder",
-      "$path": "src/shared"
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true
+      }
     }
   }
 }
